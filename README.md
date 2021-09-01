@@ -9,6 +9,9 @@
 - Create markup file and add markup for leaderboard
 - Style them using CSS
 - How to use `import` and `export`
+- Create functions to send data to API
+- Get data from `API` using `fetch` method
+- Display data when user click on `Refresh Button`
 
 ## Live View
 
