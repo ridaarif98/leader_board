@@ -61,6 +61,14 @@ section {
   border-radius: 5px;
 }
 
+.addScore form .btnDiv button {
+  width: 150px;
+  margin: 15px 10px;
+  padding: 10px 12px;
+  font-size: 20px;
+  align-items: flex-end;
+}
+
 .scoresDetail .scoreHeading li button:hover {
   background-color: darkgray;
   color: black;
@@ -103,12 +111,4 @@ section {
 
 .btnDiv {
   text-align: right;
-}
-
-.addScore form .btnDiv button {
-  width: 150px;
-  margin: 15px 10px;
-  padding: 10px 12px;
-  font-size: 20px;
-  align-items: flex-end;
 }
