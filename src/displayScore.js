@@ -3,8 +3,12 @@ const getScore = async (url) => {
   return score.json();
 };
 
-const displayScores = ((score) => {
-  document.getElementById('displayList');
-});
+function displayScores(scores) {
+  const scoreArray = scores.result;
+  const scoreDetail = scoreArray.map((b) => `
+    <li>${b.user} : ${b.score}</li>
+  `).join('');
+  document.getElementById('displayList').innerHTML = `${scoreDetail}`;
+}
 
 export { getScore, displayScores };

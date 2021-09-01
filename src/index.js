@@ -1,7 +1,7 @@
 import './style.css';
 import sendScores from './sendScore.js';
 import {
-    getScore, displayScores
+  getScore, displayScores,
 } from './displayScore.js';
 
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/BT0dBrz8PnCOOMBT0tZ4/scores/';
@@ -16,5 +16,9 @@ form.addEventListener('submit', (e) => {
 });
 
 refreshBtn.addEventListener('click', () => {
-  getScore(url).then((scoreDetail) => { displayScores(scoreDetail); });
+  getScore(url).then((data) => { displayScores(data); });
+});
+
+window.addEventListener('load', () => {
+  getScore(url).then((data) => { displayScores(data); });
 });
