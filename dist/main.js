@@ -106,7 +106,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getScore\": () => (/* binding */ getScore),\n/* harmony export */   \"displayScores\": () => (/* binding */ displayScores)\n/* harmony export */ });\nconst getScore = async (url) => {\n  const score = await fetch(url);\n  return score.json();\n};\n\nfunction displayScores(scores) {\n  const scoreArray = scores.result;\n  const scoreDetail = scoreArray.map((b) => `\n    <li>${b.user} : ${b.score}</li>\n  `).join('');\n  document.getElementById('displayList').innerHTML = `${scoreDetail}`;\n}\n\n\n\n//# sourceURL=webpack://leader_board/./src/displayScore.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getScore\": () => (/* binding */ getScore),\n/* harmony export */   \"displayScores\": () => (/* binding */ displayScores)\n/* harmony export */ });\nconst getScore = async (url) => {\n  const score = await fetch(url);\n  return score.json();\n};\n\nconst displayScores = ((scores) => {\n  const scoreArray = scores.result;\n  const scoreDetail = scoreArray.map((b) => `\n    <li>${b.user} : ${b.score}</li>\n  `).join('');\n  document.getElementById('displayList').innerHTML = `${scoreDetail}`;\n});\n\n\n\n//# sourceURL=webpack://leader_board/./src/displayScore.js?");
 
 /***/ }),
 
