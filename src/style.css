@@ -61,6 +61,12 @@ section {
   border-radius: 5px;
 }
 
+.scoresDetail .scoreHeading li button:hover {
+  background-color: darkgray;
+  color: black;
+  font-size: 20px;
+}
+
 .score {
   display: flex;
   flex-direction: column;
