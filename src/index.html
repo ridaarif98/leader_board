@@ -20,7 +20,7 @@
                     <button>Refresh</button>
                 </li>
             </ul>
-            <ul class="score">
+            <ul class="score" id="displayList">
                 <li>Ali : 90 </li>
                 <li>Ahmed : 50</li>
                 <li>Sheri : 80</li>
@@ -31,11 +31,11 @@
         </div>
         <div class="addScore">
             <h2>Add your Score</h2>
-            <form>
+            <form id="gameForm">
                 <input type="text" id="nameText" placeholder="Your name" required>
                 <input type="number" id="scoreText" placeholder="Your score" required>
                 <div class="btnDiv">
-                    <button>Submit</button>
+                    <button type="submit" id="submitBtn">Submit</button>
                 </div>
             </form>
         </div>
