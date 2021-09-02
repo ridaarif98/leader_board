@@ -9,6 +9,10 @@ const form = document.getElementById('gameForm');
 const refreshBtn = document.getElementById('refreshBtn');
 const userName = document.getElementById('nameText');
 const userScore = document.getElementById('scoreText');
+const span = document.getElementById('dateTime');
+
+const d = new Date();
+span.innerHTML = d.toUTCString();
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
